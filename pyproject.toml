@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "statistical-tarot"
+version = "0.1.0"
+description = "A local five-pile tarot sampler and descriptive statistics report"
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+statistical-tarot = "statistical_tarot.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["statistical_tarot*"]
+
+[tool.setuptools.package-data]
+statistical_tarot = ["card_names_zh.json"]
