@@ -1,0 +1,48 @@
+{
+  "format": "statistical-tarot-run-v1",
+  "version": 1,
+  "tool_version": "0.1.0",
+  "question": "SYNTHETIC DEMO — deterministic test data, not a reading.",
+  "draws": 1000,
+  "prepared_at": "2000-01-01T00:00:00+00:00",
+  "synthetic": true,
+  "sampling_id": "five-piles-uniform-v1",
+  "catalog_sha256": "4d82e7ae49d93745c3ffc136a1db562a6576a6d24f04522a2bdc5cc413c274c6",
+  "piles": [
+    {
+      "key": "fire",
+      "size": 14
+    },
+    {
+      "key": "water",
+      "size": 14
+    },
+    {
+      "key": "air",
+      "size": 14
+    },
+    {
+      "key": "earth",
+      "size": 14
+    },
+    {
+      "key": "major",
+      "size": 22
+    }
+  ],
+  "spread": "五位置：火／水／风／土各14张，大阿卡那22张。",
+  "position_semantics": "位置只表示堆归属，不指派时间、主体或因果意义。",
+  "sampling": "每次等概率选五堆之一，再在该堆等概率抽一张；每次独立、有放回。",
+  "random_source": "NONE: deterministic synthetic fixture",
+  "orientation": "正逆独立各50%；主统计合并牌名，原始正逆保留。",
+  "stopping": "固定1000次；不补抽、不重抽、不续抽；输出目录不可复用。",
+  "tail_definition": "含观察值的上下尾；双尾=min(1,2*min(P(X<=k),P(X>=k)))。",
+  "multiplicity": "Holm按每堆分别校正，alpha=0.05；没有全78项整体校正。",
+  "display_bands": {
+    "接近基线": "|z|<1",
+    "普通偏离": "1<=|z|<2",
+    "极端候选": "|z|>=2"
+  },
+  "scope": "仅原始抽取及描述统计，无牌义正文或自动解读。",
+  "fixture_recipe": "Arithmetic schedule: 24 fire, 18 water, 20 air, 16 earth, 22 major per 100; repeat ten times."
+}

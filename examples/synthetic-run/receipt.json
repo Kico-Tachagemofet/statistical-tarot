@@ -1,0 +1,10 @@
+{
+  "status": "completed",
+  "completed_at": "2000-01-01T00:00:01+00:00",
+  "draws": 1000,
+  "requested_draws": 1000,
+  "completed_draws": 1000,
+  "synthetic": true,
+  "raw_sha256": "c5d5f38412f65c4fd77ce1a9a72703d494dcbd3aa113707a79a17294fab7c1a4",
+  "protocol_sha256": "040d29bb967c20be799c93e9f5dd5d1c87527148e2902021460b41d6cc57836f"
+}
